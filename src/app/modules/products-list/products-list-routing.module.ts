@@ -6,6 +6,11 @@ import { ProductsListComponent } from './products-list.component';
 const routes: Routes = [
 	{
 		path: '',
+		pathMatch: 'full',
+		component: ProductsListComponent,
+	},
+	{
+		path: ':subCategoryId',
 		component: ProductsListComponent,
 	},
 ];
